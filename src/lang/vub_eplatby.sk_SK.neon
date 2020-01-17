@@ -1,0 +1,10 @@
+config:
+    sharedsecret:
+        name: "VÚB ePlatby secret"
+        description: "Heslo poskytnuté bankou na podpisovanie requestov (napr. 1234abcd)"
+    mid:
+        name: "VÚB ePlatby MID"
+        description: "ID obchodu, ktoré prideľuje banka (napr. 1234)"
+    mode:
+        name: "VÚB ePlatby mód"
+        description: 'Mód, v ktorom platobná brána bude inicializovaná ("test" alebo "live")'

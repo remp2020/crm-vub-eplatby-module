@@ -1,0 +1,8 @@
+services:
+	moduleManager:
+		setup:
+			- addModule(Crm\VubEplatbyModule\VubEplatbyModule())
+
+	- Crm\VubEplatbyModule\Seeders\ConfigsSeeder
+	- Crm\VubEplatbyModule\Seeders\PaymentGatewaysSeeder
+	- Crm\VubEplatbyModule\Gateways\VubEplatby

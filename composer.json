@@ -1,0 +1,18 @@
+{
+  "name": "remp/crm-vub-eplatby-module",
+  "description": "CRM VÚB ePlatby Module",
+  "type": "library",
+  "homepage": "https://remp2020.com",
+  "license": "MIT",
+  "require": {
+    "php": "^7.1",
+    "tomaj/omnipay-vub": "^3.0"
+  },
+  "minimum-stability": "dev",
+  "autoload": {
+    "psr-4": {
+      "Crm\\VubEplatbyModule\\": "src/"
+    },
+    "classmap": ["src/"]
+  }
+}
