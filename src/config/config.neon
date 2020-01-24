@@ -6,3 +6,7 @@ services:
 	- Crm\VubEplatbyModule\Seeders\ConfigsSeeder
 	- Crm\VubEplatbyModule\Seeders\PaymentGatewaysSeeder
 	- Crm\VubEplatbyModule\Gateways\VubEplatby
+
+	gatewayFactory:
+		setup:
+			- registerGateway(vub_eplatby, Crm\VubEplatbyModule\Gateways\VubEplatby)
