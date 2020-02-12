@@ -59,6 +59,75 @@ class ConfigsSeeder implements ISeeder
             $sorting++,
             'vub_eplatby.config.mode.description'
         );
+
+        $categoryName = 'payments.config.category_confirmation';
+        $category = $category = $this->configCategoriesRepository->loadByName($categoryName);
+        if (!$category) {
+            $category = $category = $this->configCategoriesRepository->add($categoryName, 'fa fa-check-double', 1600);
+            $output->writeln('  <comment>* config category <info>Potvrdzovacie e-maily</info> created</comment>');
+        } else {
+            $output->writeln('  * config category <info>Potvrdzovacie e-maily</info> exists');
+        }
+
+        $this->addPaymentConfig(
+            $output,
+            $category,
+            'vub_confirmation_host',
+            'vub_eplatby.config.vub_confirmation_host.name',
+            '',
+            200,
+            'vub_eplatby.config.vub_confirmation_host.description'
+        );
+
+        $this->addPaymentConfig(
+            $output,
+            $category,
+            'vub_confirmation_port',
+            'vub_eplatby.config.vub_confirmation_port.name',
+            '',
+            201,
+            'vub_eplatby.config.vub_confirmation_port.description'
+        );
+
+        $this->addPaymentConfig(
+            $output,
+            $category,
+            'vub_confirmation_username',
+            'vub_eplatby.config.vub_confirmation_username.name',
+            '',
+            202,
+            'vub_eplatby.config.vub_confirmation_username.description'
+        );
+
+        $this->addPaymentConfig(
+            $output,
+            $category,
+            'vub_confirmation_password',
+            'vub_eplatby.config.vub_confirmation_password.name',
+            '',
+            203,
+            'vub_eplatby.config.vub_confirmation_password.description'
+        );
+
+        $this->addPaymentConfig(
+            $output,
+            $category,
+            'vub_confirmation_processed_folder',
+            'vub_eplatby.config.vub_confirmation_processed_folder.name',
+            '',
+            204,
+            'vub_eplatby.config.vub_confirmation_processed_folder.description'
+        );
+
+        $this->addPaymentConfig(
+            $output,
+            $category,
+            'vub_zip_password',
+            'payments.config.vub_zip_password.name',
+            '',
+            205,
+            'payments.config.vub_zip_password.description'
+        );
     }
 
     private function addPaymentConfig(OutputInterface $output, $category, $name, $displayName, $value, $sorting, $description = null)
