@@ -23,7 +23,7 @@ class PaymentGatewaysSeeder implements ISeeder
             $this->paymentGatewaysRepository->add(
                 'VÚB ePlatby',
                 $code,
-                100,
+                130,
                 true
             );
             $output->writeln("  <comment>* payment type <info>{$code}</info> created</comment>");
