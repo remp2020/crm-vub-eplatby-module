@@ -8,4 +8,4 @@ Examples of confirmation mails received from banks. Every type of mail has it's 
 
 **From:** nonstopbanking (at) vub (dot) sk
 
-[Example e-mail file](docs/_static/emails/vub.eml)
+[Example e-mail file](docs/vub.eml)
