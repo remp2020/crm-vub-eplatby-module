@@ -5,6 +5,9 @@ config:
     mid:
         name: "VÚB ePlatby MID"
         description: "Merchant ID assigned by the bank (e.g. 1234)"
+    constant_symbol:
+        name: "VÚB ePlatby constant symbol"
+        description: 'Constant symbol used for payment identification (e.g. 0308)'
     mode:
         name: "VÚB ePlatby mode"
         description: 'Mode in which the gateway is running ("test" or "live")'

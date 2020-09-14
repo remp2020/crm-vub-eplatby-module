@@ -60,6 +60,17 @@ class ConfigsSeeder implements ISeeder
         $this->addConfig(
             $output,
             $category,
+            'vub_eplatby_constant_symbol',
+            ApplicationConfig::TYPE_STRING,
+            'vub_eplatby.config.constant_symbol.name',
+            'vub_eplatby.config.constant_symbol.description',
+            '0308',
+            $sorting++
+        );
+
+        $this->addConfig(
+            $output,
+            $category,
             'vub_eplatby_mode',
             ApplicationConfig::TYPE_STRING,
             'vub_eplatby.config.mode.name',

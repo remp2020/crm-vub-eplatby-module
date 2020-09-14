@@ -5,6 +5,9 @@ config:
     mid:
         name: "VÚB ePlatby MID"
         description: "ID obchodu, ktoré prideľuje banka (napr. 1234)"
+    constant_symbol:
+        name: "VÚB ePlatby konštantný symbol"
+        description: 'Konštantný symbol použitý počas platby (napr. 0308)'
     mode:
         name: "VÚB ePlatby mód"
         description: 'Mód, v ktorom platobná brána bude inicializovaná ("test" alebo "live")'

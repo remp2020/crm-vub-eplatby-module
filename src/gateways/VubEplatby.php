@@ -29,6 +29,7 @@ class VubEplatby extends GatewayAbstract
         $request = [
             'amount' => $payment->amount,
             'vs' => $payment->variable_symbol,
+            'cs' => $this->applicationConfig->get('vub_eplatby_constant_symbol'),
             'rurl' => $this->generateReturnUrl($payment),
         ];
 
