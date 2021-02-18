@@ -79,6 +79,17 @@ class ConfigsSeeder implements ISeeder
             $sorting++
         );
 
+        $this->addConfig(
+            $output,
+            $category,
+            'vub_eplatby_rem',
+            ApplicationConfig::TYPE_STRING,
+            'vub_eplatby.config.rem.name',
+            'vub_eplatby.config.rem.description',
+            '',
+            $sorting++
+        );
+
         $category = $this->configCategoriesRepository->loadByName('payments.config.category_confirmation');
         if (!$category) {
             $category = $this->configCategoriesRepository->add('payments.config.category_confirmation', 'fa fa-check-double', 1600);

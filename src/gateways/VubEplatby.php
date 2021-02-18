@@ -19,7 +19,7 @@ class VubEplatby extends GatewayAbstract
 
         $this->gateway->setSharedSecret($this->applicationConfig->get('vub_eplatby_sharedsecret'));
         $this->gateway->setMid($this->applicationConfig->get('vub_eplatby_mid'));
-        $this->gateway->setTestMode(!($this->applicationConfig->get('vub_eplatby_mode') == 'live'));
+        $this->gateway->setTestMode(!($this->applicationConfig->get('vub_eplatby_mode') === 'live'));
     }
 
     public function begin($payment)
@@ -32,6 +32,11 @@ class VubEplatby extends GatewayAbstract
             'cs' => $this->applicationConfig->get('vub_eplatby_constant_symbol'),
             'rurl' => $this->generateReturnUrl($payment),
         ];
+
+        $referenceEmail = $this->applicationConfig->get('vub_eplatby_rem');
+        if ($referenceEmail) {
+            $request['rem'] = $referenceEmail;
+        }
 
         $this->response = $this->gateway->purchase($request)->send();
     }
