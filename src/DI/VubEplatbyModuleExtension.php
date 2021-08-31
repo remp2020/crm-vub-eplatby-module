@@ -3,7 +3,6 @@
 namespace Crm\VubEplatbyModule\DI;
 
 use Kdyby\Translation\DI\ITranslationProvider;
-use Nette\DI\Compiler;
 use Nette\DI\CompilerExtension;
 
 final class VubEplatbyModuleExtension extends CompilerExtension implements ITranslationProvider
@@ -18,8 +17,7 @@ final class VubEplatbyModuleExtension extends CompilerExtension implements ITran
         $this->config = $this->validateConfig($this->defaults);
 
         // load services from config and register them to Nette\DI Container
-        Compiler::loadDefinitions(
-            $builder,
+        $this->compiler->loadDefinitionsFromConfig(
             $this->loadFromFile(__DIR__.'/../config/config.neon')['services']
         );
     }
