@@ -8,7 +8,7 @@ use Omnipay\Omnipay;
 
 class VubEplatby extends GatewayAbstract
 {
-    const GATEWAY_CODE = 'vub_eplatby';
+    public const GATEWAY_CODE = 'vub_eplatby';
 
     /** @var Gateway */
     protected $gateway;
