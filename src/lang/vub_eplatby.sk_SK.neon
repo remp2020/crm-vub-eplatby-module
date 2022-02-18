@@ -1,34 +1,34 @@
 config:
-    sharedsecret:
-        name: "VÚB ePlatby secret"
-        description: "Heslo poskytnuté bankou na podpisovanie requestov (napr. 1234abcd)"
-    mid:
-        name: "VÚB ePlatby MID"
-        description: "ID obchodu, ktoré prideľuje banka (napr. 1234)"
-    constant_symbol:
-        name: "VÚB ePlatby konštantný symbol"
-        description: 'Konštantný symbol použitý počas platby (napr. 0308)'
-    mode:
-        name: "VÚB ePlatby mód"
-        description: 'Mód, v ktorom platobná brána bude inicializovaná ("test" alebo "live")'
-    rem:
-        name: "VÚB ePlatby notifikačný e-mail"
-        description: "E-mailová adresa, na ktorú sa odošle potvrdenie o platbe"
-    vub_confirmation_host:
-        name: VÚB host
-        description: "IMAP host pre pripojenie (napr. imap.gmail.com) (<a href='https://github.com/remp2020/crm-vub-eplatby-module#confirmation-e-mails' target='_blank'>info</a>)"
-    vub_confirmation_port:
-        name: VÚB port
-        description: "IMAP port pre pripojenie (napr. 993) (<a href='https://github.com/remp2020/crm-vub-eplatby-module#confirmation-e-mails' target='_blank'>info</a>)"
-    vub_confirmation_username:
-        name: VÚB username
-        description: "IMAP prihlasovacie meno pre pripojenie (napr. example@gmail.com) (<a href='https://github.com/remp2020/crm-vub-eplatby-module#confirmation-e-mails' target='_blank'>info</a>)"
-    vub_confirmation_password:
-        name: VÚB password
-        description: "IMAP heslo pre pripojenie (napr. password) (<a href='https://github.com/remp2020/crm-vub-eplatby-module#confirmation-e-mails' target='_blank'>info</a>)"
-    vub_confirmation_processed_folder:
-        name: VÚB zložka
-        description: "IMAP zložka do ktoreho sa presunie email po spracovani (napr. INBOX/processed) (<a href='https://github.com/remp2020/crm-vub-eplatby-module#confirmation-e-mails' target='_blank'>info</a>)"
-    vub_zip_password:
-        name: VÚB ZIP Heslo
-        description: "Heslo k ZIP súboru v potvrdzovacích emailoch z VÚB banky (napr. password) (<a href='https://github.com/remp2020/crm-vub-eplatby-module#confirmation-e-mails' target='_blank'>info</a>)"
+	sharedsecret:
+		name: "VÚB ePlatby secret"
+		description: "Heslo poskytnuté bankou na podpisovanie requestov (napr. 1234abcd)"
+	mid:
+		name: "VÚB ePlatby MID"
+		description: "ID obchodu, ktoré prideľuje banka (napr. 1234)"
+	constant_symbol:
+		name: "VÚB ePlatby konštantný symbol"
+		description: 'Konštantný symbol použitý počas platby (napr. 0308)'
+	mode:
+		name: "VÚB ePlatby mód"
+		description: 'Mód, v ktorom platobná brána bude inicializovaná ("test" alebo "live")'
+	rem:
+		name: "VÚB ePlatby notifikačný e-mail"
+		description: "E-mailová adresa, na ktorú sa odošle potvrdenie o platbe"
+	vub_confirmation_host:
+		name: VÚB host
+		description: "IMAP host pre pripojenie (napr. imap.gmail.com) (<a href='https://github.com/remp2020/crm-vub-eplatby-module#confirmation-e-mails' target='_blank'>info</a>)"
+	vub_confirmation_port:
+		name: VÚB port
+		description: "IMAP port pre pripojenie (napr. 993) (<a href='https://github.com/remp2020/crm-vub-eplatby-module#confirmation-e-mails' target='_blank'>info</a>)"
+	vub_confirmation_username:
+		name: VÚB username
+		description: "IMAP prihlasovacie meno pre pripojenie (napr. example@gmail.com) (<a href='https://github.com/remp2020/crm-vub-eplatby-module#confirmation-e-mails' target='_blank'>info</a>)"
+	vub_confirmation_password:
+		name: VÚB password
+		description: "IMAP heslo pre pripojenie (napr. password) (<a href='https://github.com/remp2020/crm-vub-eplatby-module#confirmation-e-mails' target='_blank'>info</a>)"
+	vub_confirmation_processed_folder:
+		name: VÚB zložka
+		description: "IMAP zložka do ktoreho sa presunie email po spracovani (napr. INBOX/processed) (<a href='https://github.com/remp2020/crm-vub-eplatby-module#confirmation-e-mails' target='_blank'>info</a>)"
+	vub_zip_password:
+		name: VÚB ZIP Heslo
+		description: "Heslo k ZIP súboru v potvrdzovacích emailoch z VÚB banky (napr. password) (<a href='https://github.com/remp2020/crm-vub-eplatby-module#confirmation-e-mails' target='_blank'>info</a>)"
