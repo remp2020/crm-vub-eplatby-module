@@ -20,6 +20,7 @@ class VubEplatby extends GatewayAbstract
         $this->gateway->setSharedSecret($this->applicationConfig->get('vub_eplatby_sharedsecret'));
         $this->gateway->setMid($this->applicationConfig->get('vub_eplatby_mid'));
         $this->gateway->setTestMode(!($this->applicationConfig->get('vub_eplatby_mode') === 'live'));
+        $this->gateway->setTestHost($this->testHost);
     }
 
     public function begin($payment)
