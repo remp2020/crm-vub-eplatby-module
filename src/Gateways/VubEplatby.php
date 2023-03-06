@@ -10,12 +10,13 @@ class VubEplatby extends GatewayAbstract
 {
     public const GATEWAY_CODE = 'vub_eplatby';
 
-    /** @var Gateway */
-    protected $gateway;
+    protected Gateway $gateway;
 
     protected function initialize()
     {
-        $this->gateway = Omnipay::create('Eplatby');
+        /** @var Gateway $gateway */
+        $gateway = Omnipay::create('Eplatby');
+        $this->gateway = $gateway;
 
         $this->gateway->setSharedSecret($this->applicationConfig->get('vub_eplatby_sharedsecret'));
         $this->gateway->setMid($this->applicationConfig->get('vub_eplatby_mid'));
