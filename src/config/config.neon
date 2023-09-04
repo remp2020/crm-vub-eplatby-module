@@ -6,8 +6,7 @@ services:
 	- Crm\VubEplatbyModule\Seeders\ConfigsSeeder
 	- Crm\VubEplatbyModule\Seeders\PaymentGatewaysSeeder
 	- Crm\VubEplatbyModule\Gateways\VubEplatby
-	- Crm\VubEplatbyModule\MailConfirmation\VubMailDownloader(%tempDir%)
-	- Crm\VubEplatbyModule\Commands\VubMailConfirmationCommand
+	- Crm\VubEplatbyModule\Commands\VubMailConfirmationCommand(%tempDir%)
 
 	gatewayFactory:
 		setup:
