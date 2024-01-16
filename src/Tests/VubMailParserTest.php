@@ -2,7 +2,7 @@
 
 namespace Crm\VubEplatbyModule\Tests;
 
-use Crm\VubEplatbyModule\MailParser\VubMailParser;
+use Crm\VubEplatbyModule\Models\MailParser\VubMailParser;
 use PHPUnit\Framework\TestCase;
 
 class VubMailParserTest extends TestCase

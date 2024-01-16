@@ -6,7 +6,7 @@ use Crm\ApplicationModule\Config\ApplicationConfig;
 use Crm\PaymentsModule\MailConfirmation\MailProcessor;
 use Crm\PaymentsModule\Models\MailDownloader\EmailInterface;
 use Crm\PaymentsModule\Models\MailDownloader\MailDownloaderInterface;
-use Crm\VubEplatbyModule\MailParser\VubMailParser;
+use Crm\VubEplatbyModule\Models\MailParser\VubMailParser;
 use Nette\Utils\FileSystem;
 use Nette\Utils\Random;
 use Symfony\Component\Console\Command\Command;
