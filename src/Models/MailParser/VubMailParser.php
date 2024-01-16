@@ -1,6 +1,6 @@
 <?php
 
-namespace Crm\VubEplatbyModule\MailParser;
+namespace Crm\VubEplatbyModule\Models\MailParser;
 
 use Tomaj\BankMailsParser\MailContent;
 use Tomaj\BankMailsParser\Parser\ParserInterface;
