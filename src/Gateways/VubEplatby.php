@@ -2,7 +2,7 @@
 
 namespace Crm\VubEplatbyModule\Gateways;
 
-use Crm\PaymentsModule\Gateways\GatewayAbstract;
+use Crm\PaymentsModule\Models\Gateways\GatewayAbstract;
 use Omnipay\Eplatby\Gateway;
 use Omnipay\Omnipay;
 

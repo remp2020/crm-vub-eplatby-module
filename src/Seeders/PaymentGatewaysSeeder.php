@@ -3,7 +3,7 @@
 namespace Crm\VubEplatbyModule\Seeders;
 
 use Crm\ApplicationModule\Seeders\ISeeder;
-use Crm\PaymentsModule\Repository\PaymentGatewaysRepository;
+use Crm\PaymentsModule\Repositories\PaymentGatewaysRepository;
 use Crm\VubEplatbyModule\Gateways\VubEplatby;
 use Symfony\Component\Console\Output\OutputInterface;
 
