@@ -2,9 +2,9 @@
 
 namespace Crm\VubEplatbyModule;
 
-use Crm\ApplicationModule\Commands\CommandsContainerInterface;
+use Crm\ApplicationModule\Application\CommandsContainerInterface;
+use Crm\ApplicationModule\Application\Managers\SeederManager;
 use Crm\ApplicationModule\CrmModule;
-use Crm\ApplicationModule\SeederManager;
 use Crm\VubEplatbyModule\Commands\VubMailConfirmationCommand;
 use Crm\VubEplatbyModule\Seeders\ConfigsSeeder;
 use Crm\VubEplatbyModule\Seeders\PaymentGatewaysSeeder;
