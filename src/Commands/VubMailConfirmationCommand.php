@@ -84,7 +84,7 @@ class VubMailConfirmationCommand extends Command
 
             Debugger::log(
                 'missing VUB mail attachment for payment with variable symbol: ' . $vs,
-                ILogger::WARNING
+                ILogger::WARNING,
             );
             return false;
         }

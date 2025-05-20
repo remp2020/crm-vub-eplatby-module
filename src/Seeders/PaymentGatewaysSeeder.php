@@ -24,7 +24,7 @@ class PaymentGatewaysSeeder implements ISeeder
                 'VÚB ePlatby',
                 $code,
                 130,
-                true
+                true,
             );
             $output->writeln("  <comment>* payment type <info>{$code}</info> created</comment>");
         } else {

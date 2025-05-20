@@ -23,7 +23,7 @@ class ConfigsSeeder implements ISeeder
     public function __construct(
         ConfigCategoriesRepository $configCategoriesRepository,
         ConfigsRepository $configsRepository,
-        ConfigBuilder $configBuilder
+        ConfigBuilder $configBuilder,
     ) {
         $this->configCategoriesRepository = $configCategoriesRepository;
         $this->configsRepository = $configsRepository;
@@ -43,7 +43,7 @@ class ConfigsSeeder implements ISeeder
             'vub_eplatby.config.sharedsecret.name',
             'vub_eplatby.config.sharedsecret.description',
             '1111111111111111111111111111111111111111111111111111111111111111',
-            $sorting++
+            $sorting++,
         );
 
         $this->addConfig(
@@ -54,7 +54,7 @@ class ConfigsSeeder implements ISeeder
             'vub_eplatby.config.mid.name',
             'vub_eplatby.config.mid.description',
             '1111',
-            $sorting++
+            $sorting++,
         );
 
         $this->addConfig(
@@ -65,7 +65,7 @@ class ConfigsSeeder implements ISeeder
             'vub_eplatby.config.constant_symbol.name',
             'vub_eplatby.config.constant_symbol.description',
             '0308',
-            $sorting++
+            $sorting++,
         );
 
         $this->addConfig(
@@ -76,7 +76,7 @@ class ConfigsSeeder implements ISeeder
             'vub_eplatby.config.mode.name',
             'vub_eplatby.config.mode.description',
             'test',
-            $sorting++
+            $sorting++,
         );
 
         $this->addConfig(
@@ -87,7 +87,7 @@ class ConfigsSeeder implements ISeeder
             'vub_eplatby.config.rem.name',
             'vub_eplatby.config.rem.description',
             '',
-            $sorting++
+            $sorting++,
         );
 
         $category = $this->configCategoriesRepository->loadByName('payments.config.category_confirmation');
@@ -106,7 +106,7 @@ class ConfigsSeeder implements ISeeder
             'vub_eplatby.config.vub_confirmation_host.name',
             'vub_eplatby.config.vub_confirmation_host.description',
             '',
-            1001
+            1001,
         );
 
         $this->addConfig(
@@ -117,7 +117,7 @@ class ConfigsSeeder implements ISeeder
             'vub_eplatby.config.vub_confirmation_port.name',
             'vub_eplatby.config.vub_confirmation_port.description',
             '',
-            1002
+            1002,
         );
 
         $this->addConfig(
@@ -128,7 +128,7 @@ class ConfigsSeeder implements ISeeder
             'vub_eplatby.config.vub_confirmation_username.name',
             'vub_eplatby.config.vub_confirmation_username.description',
             '',
-            1003
+            1003,
         );
 
         $this->addConfig(
@@ -139,7 +139,7 @@ class ConfigsSeeder implements ISeeder
             'vub_eplatby.config.vub_confirmation_password.name',
             'vub_eplatby.config.vub_confirmation_password.description',
             '',
-            1004
+            1004,
         );
 
         $this->addConfig(
@@ -150,7 +150,7 @@ class ConfigsSeeder implements ISeeder
             'vub_eplatby.config.vub_confirmation_processed_folder.name',
             'vub_eplatby.config.vub_confirmation_processed_folder.description',
             '',
-            1005
+            1005,
         );
 
         $this->addConfig(
@@ -161,7 +161,7 @@ class ConfigsSeeder implements ISeeder
             'vub_eplatby.config.vub_zip_password.name',
             'vub_eplatby.config.vub_zip_password.description',
             '',
-            1006
+            1006,
         );
 
         // moving configs to different category if they already existed
@@ -169,7 +169,7 @@ class ConfigsSeeder implements ISeeder
         $this->configsRepository->update($config, [
             'display_name' => 'vub_eplatby.config.vub_zip_password.name',
             'description' => 'vub_eplatby.config.vub_zip_password.description',
-            'sorting' => 1006
+            'sorting' => 1006,
         ]);
     }
 }
